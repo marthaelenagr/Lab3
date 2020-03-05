@@ -1,0 +1,195 @@
+/*
+Martha Elena García Ramos 
+A01139413
+*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+div{
+  padding: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*Every style uses the same format*/
+li {
+  padding: 20px;
+}
+
+/* for mobile styles */
+@media(min-width: 0px) and (max-width: 599px){
+  header, main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    padding: 0px;
+    visibility: hidden;
+    max-height: 0;
+  }
+
+  .hamburger {
+    color: white;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 0px;
+  }
+
+  .product {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 90%;
+    margin: 2px;
+    border: 1px solid grey;
+  }
+
+  footer {
+    margin-top: 10px;
+    border-top: 1px solid grey;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+}
+
+/* for tablet styles */
+@media (min-width:600px) and (max-width:990px){
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    margin: 10px auto;
+  }
+
+  header > h1 {
+    margin-right: 30%;
+  }
+
+  .menu {
+    visibility: hidden;
+    max-height: 0px;
+    padding: 0px;
+  }
+
+  .hamburger {
+    color: white;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 0px;
+  }
+
+  main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product {
+    align-items: center;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 90%;
+    margin: 2px;
+  }
+
+  footer {
+    margin-top: 10px;
+    border-top: 1px solid grey;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0px;
+  }
+
+}
+
+/* for larger screen styles */
+@media (min-width:991px){
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    margin: 10px auto;
+  }
+
+  header > h1 {
+    margin-right: 40%;
+  }
+
+  .hamburger {
+    visibility: hidden;
+    max-height: 0px;
+    padding: 0px;
+  }
+
+  .menu {
+    color: white;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .product {
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 5px;
+  }
+
+  footer {
+    margin-top: 10px;
+    border-top: 1px solid grey;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0px;
+  }
+}
